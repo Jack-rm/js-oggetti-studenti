@@ -21,9 +21,14 @@ let studente = {
 
 }
 
+// uso for in per un oggetto ma non per gli array
+
+
 for ( let key in studente ) {
     console.log(studente[key]);
 }
+
+
 
 
 // Creo un array di oggetti di studenti
@@ -97,12 +102,15 @@ for ( let j = 0; j < 1; j++) {
     nuovoStudente.eta = parseInt(prompt("Inserisci eta nuovo studente"));
 
     gruppoStudenti.push(nuovoStudente);
-
+    console.log(gruppoStudenti[j]);
 }
 
 
+// per gli array utilizzo o un for semplice o for of (?
+/* ERRORE
 for ( let key in gruppoStudenti ) {
     
     console.log(gruppoStudenti[key]);
     
 }
+*/
